@@ -7,34 +7,34 @@ import {
   CBadge
 } from '@coreui/react';
 
-const recentJobs = [
+const recentProjects = [
   {
-    title: 'Frontend Developer',
-    company: 'TechNest Inc.',
+    title: 'TalentMatch Admin Portal',
+    company: 'TalentMatch',
     location: 'Remote',
     status: 'Active',
-    tags: ['Full-time', 'Remote', 'React'],
+    tags: ['React', 'CoreUI', 'Admin'],
   },
   {
-    title: 'Backend Engineer',
-    company: 'DataCore Solutions',
-    location: 'Bengaluru, India',
+    title: 'E-commerce Website',
+    company: 'FastDrop',
+    location: 'Mumbai, India',
     status: 'Closed',
-    tags: ['Full-time', 'Node.js', 'MongoDB'],
+    tags: ['Next.js', 'Stripe', 'Vercel'],
   },
   {
-    title: 'Product Manager',
-    company: 'InnoWave',
+    title: 'Food Delivery App',
+    company: 'QuickBite',
+    location: 'Bengaluru, India',
+    status: 'Active',
+    tags: ['Flutter', 'Firebase', 'Maps'],
+  },
+  {
+    title: 'Portfolio Website',
+    company: 'John Doe',
     location: 'Pune, India',
     status: 'Active',
-    tags: ['Hybrid', 'Agile', 'Leadership'],
-  },
-  {
-    title: 'UI/UX Designer',
-    company: 'PixelEdge',
-    location: 'Delhi, India',
-    status: 'Active',
-    tags: ['Remote', 'Figma', 'Creative'],
+    tags: ['HTML', 'CSS', 'Hosting'],
   },
 ];
 
@@ -46,21 +46,25 @@ const statusColor = {
 const RecentProjects = () => {
   return (
     <div className="container my-5">
-      <h4 className="mb-4">Recent Projects</h4>
-      {recentJobs.map((job, index) => (
+      <h5 className="mb-4">Recent Projects</h5>
+      {recentProjects.map((project, index) => (
         <CCard key={index} className="mb-3 shadow-sm">
           <CCardBody>
             <div className="d-flex justify-content-between align-items-start mb-2">
               <div>
-                <CCardTitle className="mb-1">{job.title}</CCardTitle>
-                <CCardText className="text-muted mb-0">{job.company}</CCardText>
-                <CCardText className="text-muted small">{job.location}</CCardText>
+                <CCardTitle className="mb-1">{project.title}</CCardTitle>
+                <CCardText className="text-muted mb-0">{project.company}</CCardText>
+                <CCardText className="text-muted small">{project.location}</CCardText>
               </div>
-              <CBadge color={statusColor[job.status]} className="mt-1">{job.status}</CBadge>
+              <CBadge color={statusColor[project.status]} className="mt-1">
+                {project.status}
+              </CBadge>
             </div>
             <div className="d-flex flex-wrap gap-2 mt-2">
-              {job.tags.map((tag, i) => (
-                <CBadge key={i} color="info" className="text-white">{tag}</CBadge>
+              {project.tags.map((tag, i) => (
+                <CBadge key={i} color="info" className="text-white">
+                  {tag}
+                </CBadge>
               ))}
             </div>
           </CCardBody>
