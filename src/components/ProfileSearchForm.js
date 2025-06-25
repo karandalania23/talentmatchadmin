@@ -137,7 +137,7 @@ const ProfileSearch = () => {
                 placeholder="eg: Computer Science, Mechanical, Electrical"
               />
             </CForm>
-            <a href='#/UserProfile'>
+            <a href='#/userprofile'>
 
             <CButton type="submit" color="info" className="mt-2">
                 <div className='text-white'>Search</div>   

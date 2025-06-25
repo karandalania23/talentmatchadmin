@@ -4,7 +4,7 @@ import { CAvatar, CButton } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 import { cibGmail,cilLocationPin, cilPhone } from '@coreui/icons'
 import React, { useState } from 'react'
-import CandidateInfo from './CandidateInfo'
+import CandidateInfo from './Candidateinfo'
 
 import avatar4 from 'src/assets/images/avatars/4.jpg'
 import avatar5 from 'src/assets/images/avatars/5.jpg'
