@@ -56,10 +56,11 @@ import MainChart from './MainChart'
 import JobStatsCarousel from '../../components/JobStatCarousel'
 import CandidateStatsCarousel from '../../components/CandidateStatCarousel'
 
-import RecentJobs from '../../components/RecentJObs'
+
 
 
 import { Link } from 'react-router-dom'
+import RecentProjects from '../../components/RecentProjects'
 
 const Dashboard = () => {
   const progressExample = [
@@ -193,7 +194,7 @@ const Dashboard = () => {
       <div className="h5">Welcome Recruiter Manager</div>
       <JobStatsCarousel/>
       <CandidateStatsCarousel/>
-      <RecentJobs/>
+      <RecentProjects/>
       {/*<CCard className="mb-4">
         <CCardBody>
           <CRow>
